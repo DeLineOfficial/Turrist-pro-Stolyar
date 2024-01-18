@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ЛБ1</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<main class="main-wrapper">
+		<header class="header">
+			<div class="wrapper-content">
+				<a href="#" class="header-logotype">
+					<img src="images/logo.png">
+				</a>
+				<nav class="header-menu">
+					<li class="header-menu_el"><a href="#akcii-block">Акции</a></li>
+					<li class="header-menu_el"><a href="#">Управление бронированием</a></li>
+					<li class="header-menu_el"><a href="#">Поиск</a></li>
+				</nav>
+			</div>
+		</header>
+
+		<div class="plug"></div>
+
+
+		<section class="section_block">
+			<div class="wrapper-content">
+				<div class="search-request-block">
+					<h3 class="section_title">Подходящие туры по вашим запросам:</h3>
+
+					<ul class="search-request-list">
+						<li class="search-request-list_el">
+							<img src="images/akcii-1.jpg">
+							<p class="region">Регион: <span>Тайный</span></p>
+							<p class="name">Маршрут: <span>Зачетный</span></p>
+							<p class="level">Сложность: <span>Начальный</span></p>
+							<p class="date">Дата похода: <span>01.02.24</span></p>
+							<p>Интересных зоны: <span>2</span></p>
+							<a href="ways.html" class="button">Подробнее</a>
+						</li>
+						<li class="search-request-list_el">
+							<img src="images/akcii-2.jpg">
+							<p class="region">Регион: <span>Тайный</span></p>
+							<p class="name">Маршрут: <span>Зачетный</span></p>
+							<p class="level">Сложность: <span>Начальный</span></p>
+							<p class="date">Дата похода: <span>01.02.24</span></p>
+							<p>Интересных зоны: <span>2</span></p>
+							<a href="#" class="button">Подробнее</a>
+						</li>
+						<li class="search-request-list_el">
+							<img src="images/akcii-3.jpg">
+							<p class="region">Регион: <span>Тайный</span></p>
+							<p class="name">Маршрут: <span>Зачетный</span></p>
+							<p class="level">Сложность: <span>Начальный</span></p>
+							<p class="date">Дата похода: <span>01.02.24</span></p>
+							<p>Интересных зоны: <span>2</span></p>
+							<a href="#" class="button">Подробнее</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		
+
+		<section class="section_block">
+			<div class="wrapper-content">
+				<div class="fos">
+					<h3 class="section_title">Подписаться на закрытые акции</h3>
+					<form class="fos-form">
+						<input type="text" name="email" placeholder="Введите ваш E-mail адрес">
+						<button class="button" type="submit">Подписаться</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer section_block">
+			<div class="wrapper-content">
+				<div class="footer-phone">
+					<div class="footer-el">
+						<p class="section_name">Телефон</p>
+						<a href="tel:+78005553310">“8 (800) 555-33-10”</a>
+					</div>
+				</div>
+				<div class="footer-container">
+					<div class="footer-list">
+						<div class="footer-el">
+							<a href="http://xxxxxx-m1.wsr.ru/#promotions">Акции</a>
+						</div>
+						<div class="footer-el">
+							<a href="http://xxxxxx-m1.wsr.ru/#search">Поиск</a>
+						</div>
+					</div>
+					<div class="footer-list">
+						<div class="footer-el">
+							<a href="http://xxxxxx-m1.wsr.ru/#about">О нас</a>
+						</div>
+						<div class="footer-el">
+							<a href="http://xxxxxx-m1.wsr.ru/contacts">Контакты</a>
+						</div>
+						<div class="footer-el">
+							<a href="http://xxxxxx-m1.wsr.ru/terms-and-conditions">Пользовательское соглашение</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</main>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+
+			$('.ways-element').click(function() {
+				$(this).toggleClass('active')
+			})
+		})	
+
+	</script>
+</body>
+</html>

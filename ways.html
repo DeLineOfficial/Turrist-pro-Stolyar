@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ЛБ1</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<main class="main-wrapper">
+		<header class="header">
+			<div class="wrapper-content">
+				<a href="#" class="header-logotype">
+					<img src="images/logo.png">
+				</a>
+				<nav class="header-menu">
+					<li class="header-menu_el"><a href="#akcii-block">Акции</a></li>
+					<li class="header-menu_el"><a href="#">Управление бронированием</a></li>
+					<li class="header-menu_el"><a href="#">Поиск</a></li>
+				</nav>
+			</div>
+		</header>
+
+		<div class="plug"></div>
+
+		<section class="section_block ways">
+			<div class="wrapper-content">
+				<div class="choice-way">
+					<h3 class="section_title">Выберите доступные зоны:</h3>
+				</div>
+			</div>
+			<div class="choice-way_plan">
+				<img src="images/ways.jpg">
+				<svg x="0px" y="0px" viewBox="0 0 1573 698" enable-background="new 0 0 1400 771" class="ways-polygons">
+					<a class="ways-element">
+						<polygon class="st0" points="257.57,25.39 257.57,413.57 508,413.57 742.78,178.78 742.78,25.39" fill="#FFDB8B"/>
+					</a>
+					<a class="ways-element">
+						<polygon class="st0" points="935.3,19.39 935.3,166.26 1098.09,166.26 1098.09,20.39" fill='#FFDB8B'/>
+					</a>
+				</svg>
+			</div>
+			<div class="wrapper-content">
+				<div class="ways-description">
+					<div class="ways-description-element">
+						<div class="ways-description-element_text">
+							<h3 class="section_title">Место 1</h3>
+							<p class="ways-description-text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+						</div>
+						<img src="images/ib-3.jpg">
+					</div>
+					<div class="ways-description-element">
+						<div class="ways-description-element_text">
+							<h3 class="section_title">Место 2</h3>
+							<p class="ways-description-text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic,</p>
+						</div>
+						<img src="images/about-1.jpg">
+					</div>
+				</div>
+				<a href="#" class="button">Перейти к бронированию</a>
+			</div>
+		</section>
+
+		
+
+
+		<section class="section_block">
+			<div class="wrapper-content">
+				<div class="fos">
+					<h3 class="section_title">Подписаться на закрытые акции</h3>
+					<form class="fos-form">
+						<input type="text" name="email" placeholder="Введите ваш E-mail адрес">
+						<button class="button" type="submit">Подписаться</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer section_block">
+			<div class="wrapper-content">
+				<div class="footer-phone">
+					<div class="footer-el">
+						<p class="section_name">Телефон</p>
+						<a href="tel:+78005553310">“8 (800) 555-33-10”</a>
+					</div>
+				</div>
+				<div class="footer-container">
+					<div class="footer-list">
+						<div class="footer-el">
+							<a href="http://xxxxxx-m1.wsr.ru/#promotions">Акции</a>
+						</div>
+						<div class="footer-el">
+							<a href="http://xxxxxx-m1.wsr.ru/#search">Поиск</a>
+						</div>
+					</div>
+					<div class="footer-list">
+						<div class="footer-el">
+							<a href="http://xxxxxx-m1.wsr.ru/#about">О нас</a>
+						</div>
+						<div class="footer-el">
+							<a href="http://xxxxxx-m1.wsr.ru/contacts">Контакты</a>
+						</div>
+						<div class="footer-el">
+							<a href="http://xxxxxx-m1.wsr.ru/terms-and-conditions">Пользовательское соглашение</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</main>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+
+			$('.ways-element').click(function() {
+				$(this).toggleClass('active')
+			})
+		})	
+
+	</script>
+</body>
+</html>

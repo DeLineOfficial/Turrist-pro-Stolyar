@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ЛБ1</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<main class="main-wrapper">
+		<header class="header">
+			<div class="wrapper-content">
+				<a href="#" class="header-logotype">
+					<img src="images/logo.png">
+				</a>
+				<nav class="header-menu">
+					<li class="header-menu_el"><a href="#akcii-block">Акции</a></li>
+					<li class="header-menu_el"><a href="#">Управление бронированием</a></li>
+					<li class="header-menu_el"><a href="#">Поиск</a></li>
+				</nav>
+			</div>
+		</header>
+
+		<div class="plug"></div>
+
+
+		<section class="section_block">
+			<div class="wrapper-content">
+				<h3 class="section_title">Забронировать Жопу Димона</h3>
+				<form class="booking-form">
+					<div class="search-form">
+						<div class="search-region">
+							<div class="search-region-index">Выберите регион</div>
+							<ul class="search-region-list">
+								<li>Ставрополь</li>
+								<li>Москва</li>
+								<li>Санкт-Петербург</li>
+							</ul>
+						</div>
+						<div class="search-date">
+							<input type="date" name="first">
+							<input type="date" name="last">
+						</div>
+						<div class="search-participants">
+							<input type="number" placeholder="Кол-во участников">
+							<div class="search-player">
+								<div class="search-player-index">Уровень подготовки:</div>
+								<ul class="search-player-list">
+									<li>Начальный</li>
+									<li>Средний</li>
+									<li>Продвинутый</li>
+								</ul>
+							</div>
+						</div>
+						<div class="checkbox-conteiner">
+							<input type="checkbox" id="provodnik" name="provodnik">
+							<label for="provodnik"></label>
+							<span>Услуги проводника</span>
+						</div>
+						<div class="checkbox-conteiner">
+							<input type="checkbox" id="oborudovanie" name="oborudovanie">
+							<label for="oborudovanie"></label>
+							<span>Услуги аренды туристического оборудования</span>
+						</div>
+						<div class="checkbox-conteiner">
+							<input type="checkbox" id="phonogroph" name="phonogroph">
+							<label for="phonogroph"></label>
+							<span>Услуги фотографа/видеооператора</span>
+						</div>
+						<div class="checkbox-conteiner">
+							<input type="checkbox" id="strahovka" name="strahovka">
+							<label for="strahovka"></label>
+							<span>Страхование от несчастных случаев</span>
+						</div>
+						<textarea class="textarea-form" placeholder="Комментарий"></textarea>
+						<input type="text" class="email-input" name="email" placeholder="E-Mail">
+
+						<div class="result-price"><p>Итого: </p><span>0.1$</span></div>
+						<a href="#" class="button">Забронировать</a>
+					</div>
+				</form>
+			</div>
+		</section>
+		
+
+		<section class="section_block">
+			<div class="wrapper-content">
+				<div class="fos">
+					<h3 class="section_title">Подписаться на закрытые акции</h3>
+					<form class="fos-form">
+						<input type="text" name="email" placeholder="Введите ваш E-mail адрес">
+						<button class="button" type="submit">Подписаться</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer section_block">
+			<div class="wrapper-content">
+				<div class="footer-phone">
+					<div class="footer-el">
+						<p class="section_name">Телефон</p>
+						<a href="tel:+78005553310">“8 (800) 555-33-10”</a>
+					</div>
+				</div>
+				<div class="footer-container">
+					<div class="footer-list">
+						<div class="footer-el">
+							<a href="http://xxxxxx-m1.wsr.ru/#promotions">Акции</a>
+						</div>
+						<div class="footer-el">
+							<a href="http://xxxxxx-m1.wsr.ru/#search">Поиск</a>
+						</div>
+					</div>
+					<div class="footer-list">
+						<div class="footer-el">
+							<a href="http://xxxxxx-m1.wsr.ru/#about">О нас</a>
+						</div>
+						<div class="footer-el">
+							<a href="http://xxxxxx-m1.wsr.ru/contacts">Контакты</a>
+						</div>
+						<div class="footer-el">
+							<a href="http://xxxxxx-m1.wsr.ru/terms-and-conditions">Пользовательское соглашение</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</main>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+
+			$('.search-region-index').click(function() {
+				$(this).parent().toggleClass('active');
+			})
+			$('.search-region-list > li').click(function() {
+				$('.search-region-index').text($(this).text())
+				$('.search-region').removeClass('active')
+			})
+
+
+			$('.search-player-index').click(function() {
+				$(this).parent().toggleClass('active');
+			})
+			$('.search-player-list > li').click(function() {
+				$('.search-player-index').text($(this).text())
+				$('.search-player').removeClass('active')
+			})
+		})	
+
+	</script>
+</body>
+</html>
